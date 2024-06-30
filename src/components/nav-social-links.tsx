@@ -9,17 +9,17 @@ const links: SocialLink[] = [
   {
     alt: "Instagram",
     src: "/instagram.svg",
-    href: "https://www.instagram.com/@luana.g.m",
+    href: "https://www.instagram.com/_namelessfaceless",
   },
   {
     alt: "Twitter",
     src: "/twitter.svg",
-    href: "https://www.instagram.com/@luana.g.m",
+    href: "https://x.com/namefaceless_",
   },
   {
     alt: "Email",
     src: "/envelope.svg",
-    href: "https://www.instagram.com/@luana.g.m",
+    href: "mailto:luanagoesmontes@gmail.com",
   },
 ];
 
