@@ -4,6 +4,7 @@ import { Azeret_Mono } from "next/font/google";
 import "./globals.css";
 import { PropsWithChildren } from "react";
 import { siteConfig } from "./config/site";
+import { GoogleTagManager } from "@next/third-parties/google";
 
 const azeret = Azeret_Mono({ subsets: ["latin"] });
 
@@ -45,6 +46,9 @@ type Props = PropsWithChildren<{
 export default function RootLayout({ children, dialog }: Props) {
   return (
     <html lang="en">
+      {process.env.NEXT_PUBLIC_GTM_ID && (
+        <GoogleTagManager gtmId={process.env.NEXT_PUBLIC_GTM_ID} />
+      )}
       <body className={azeret.className}>
         <div className="relative">{children}</div>
         {dialog}
