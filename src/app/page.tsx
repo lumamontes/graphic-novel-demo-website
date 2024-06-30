@@ -17,7 +17,7 @@ export default async function HomePage() {
           </p>
           <h1 className="text-4xl">Nameless, Faceless</h1>
           <p className="text-base">
-            A grafic novel written and ilustratted by{" "}
+            A graphic novel written and illustrated by{" "}
             <a
               href="https://luanagoes.vercel.app"
               target="_blank"
