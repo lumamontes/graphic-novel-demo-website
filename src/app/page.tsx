@@ -1,7 +1,7 @@
 import NavSocialLinks from "@/components/nav-social-links";
 import Image from "next/image";
 import Link from "next/link";
-import { Suspense, useState } from "react";
+import { Suspense } from "react";
 import { getPreview } from "./lib/contentful";
 import LoadingPreview from "@/components/loading-preview";
 
