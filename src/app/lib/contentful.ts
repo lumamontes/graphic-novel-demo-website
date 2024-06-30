@@ -16,7 +16,8 @@ type fethGraphQLProps = {
   preview: boolean;
 };
 
-async function fetchGraphQL({ query, preview = true }: fethGraphQLProps) {
+async function fetchGraphQL({ query }: fethGraphQLProps) {
+  const preview = process.env.NODE_ENV === "development";
   return fetch(
     `https://graphql.contentful.com/content/v1/spaces/${process.env.CONTENTFUL_SPACE_ID}`,
     {
@@ -57,12 +58,11 @@ function extractPreviewEntry(fetchResponse: fetchResponseProps) {
   return fetchResponse?.data?.pdfurlpreviewCollection?.items[0];
 }
 
-export async function getPreview(isDraftMode = false) {
+export async function getPreview() {
+  const isDraftMode = process.env.NODE_ENV === "development";
   const article = await fetchGraphQL({
     query: `query {
-      pdfurlpreviewCollection(limit: 1, preview: ${
-        isDraftMode ? "true" : "false"
-      }) {
+      pdfurlpreviewCollection(limit: 1, preview: ${isDraftMode}) {
         items {
           ${PREVIEW_GRAPHQL_FIELDS}
         }
