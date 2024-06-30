@@ -39,7 +39,7 @@ export const metadata: Metadata = {
 };
 
 type Props = PropsWithChildren<{
-  dialog?: React.ReactNode;
+  dialog: React.ReactNode;
 }>;
 
 export default function RootLayout({ children, dialog }: Props) {
@@ -47,7 +47,7 @@ export default function RootLayout({ children, dialog }: Props) {
     <html lang="en">
       <body className={azeret.className}>
         <div className="relative">{children}</div>
-        {dialog && <div>{dialog}</div>}
+        {dialog}
       </body>
     </html>
   );
