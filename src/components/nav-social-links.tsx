@@ -25,7 +25,7 @@ const links: SocialLink[] = [
 
 export default function NavSocialLinks() {
   return (
-    <nav className=" md:fixed bottom-16 right-12 p-4">
+    <nav className="mt-12 md:fixed bottom-16 right-12 p-4">
       <ul className="flex justify-center items-center gap-4 md:flex-col">
         {links.map((link, index) => (
           <li key={index} className="list-none">
