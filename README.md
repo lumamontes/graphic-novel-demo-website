@@ -4,7 +4,7 @@
 
 ![website demo](https://github.com/lumamontes/graphic-novel-demo-website/assets/60052718/cd1193e0-33d1-4252-b6fa-296292012bdf.gif)
 
-This repository contains a simple website created for a graphich novel, it features a newsletter subscription for the latest updates, a PDF display for reading a online preview, and is optimized for search engines.
+This repository contains a simple website created for a graphic novel, it features a newsletter subscription for the latest updates, a PDF display for reading a online preview, and is optimized for search engines.
 
 ## 🚀  Techs
 
